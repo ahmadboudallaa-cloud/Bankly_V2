@@ -150,3 +150,72 @@ body {
 }
 
 /* ===== BOUTONS ===== */
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005377;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.center-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* ===== TABLEAUX ===== */
+.table-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+table th {
+    padding: 15px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Badges */
