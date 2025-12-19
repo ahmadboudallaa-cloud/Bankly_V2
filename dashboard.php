@@ -41,4 +41,41 @@ $total_balance = $balance_row['total'] ? number_format($balance_row['total'], 2)
         </div>
     </nav>
     
-   
+    <div class="container">
+        <h1 class="main-title">Tableau de Bord</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Bienvenue, <?php echo $_SESSION['user_name']; ?> !</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>Clients</h3>
+                <div class="card-value"><?php echo $clients; ?></div>
+                <a href="clients/list_clients.php" class="btn">Voir tous</a>
+            </div>
+            
+            <div class="card">
+                <h3>Comptes</h3>
+                <div class="card-value"><?php echo $accounts; ?></div>
+                <a href="accounts/list_accounts.php" class="btn">Voir tous</a>
+            </div>
+            
+            <div class="card">
+                <h3>Transactions</h3>
+                <div class="card-value"><?php echo $transactions; ?></div>
+                <a href="transactions/list_transactions.php" class="btn">Voir tous</a>
+            </div>
+            
+            <div class="card">
+                <h3>Total Argent</h3>
+                <div class="card-value"><?php echo $total_balance; ?> DH</div>
+                <a href="accounts/list_accounts.php" class="btn">Détails</a>
+            </div>
+        </div>
+        
+        <div class="center-buttons">
+            <a href="clients/add_client.php" class="btn">Ajouter Client</a>
+            <a href="accounts/add_account.php" class="btn">Ajouter Compte</a>
+            <a href="transactions/make_transaction.php" class="btn">Nouvelle Transaction</a>
+        </div>
+    </div>
+</body>
+</html>
