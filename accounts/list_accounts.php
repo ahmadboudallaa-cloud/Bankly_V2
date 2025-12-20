@@ -18,7 +18,6 @@ $result = mysqli_query($conn, "SELECT comptes.*, clients.full_name
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">

@@ -9,7 +9,6 @@ if(!isset($_SESSION['user_id'])){
 
 $id = intval($_GET['id']);
 
-// Supprimer la transaction
 $sql = "DELETE FROM transactions WHERE transaction_id = $id";
 
 if(mysqli_query($conn, $sql)){

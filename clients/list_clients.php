@@ -16,7 +16,6 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">

@@ -1,9 +1,8 @@
-/* ===== VARIABLES DE COULEUR ===== */
 :root {
-    --primary: #006992;
+    --primary: #003566;
     --secondary: #eaf8bf;
     --light: #f8f9fa;
-    --white: #ffffff;
+    --white: #abdde8;
     --dark: #1e1b18;
     --success: #2ecc71;
     --danger: #e74c3c;
@@ -11,10 +10,9 @@
     --info: #3498db;
     --border: #dee2e6;
     --shadow: rgba(0, 0, 0, 0.1);
-    --nav-bg: #006992;
+    --nav-bg: #14213d;
 }
 
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +27,6 @@ body {
     padding-top: 70px;
 }
 
-/* ===== NAVBAR UNIFORME ===== */
 .navbar {
     background-color: var(--nav-bg);
     position: fixed;
@@ -63,7 +60,6 @@ body {
     margin-top: 5px;
 }
 
-/* Navigation */
 .navbar-nav {
     display: flex;
     list-style: none;
@@ -88,7 +84,6 @@ body {
     font-weight: bold;
 }
 
-/* Bouton logout */
 .logout-btn {
     background-color: var(--danger);
     color: white;
@@ -103,7 +98,6 @@ body {
     background-color: #c0392b;
 }
 
-/* ===== CONTENU PRINCIPAL ===== */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -111,7 +105,6 @@ body {
     padding: 20px;
 }
 
-/* ===== TITRES ===== */
 .main-title {
     color: var(--primary);
     text-align: center;
@@ -119,7 +112,6 @@ body {
     font-size: 28px;
 }
 
-/* ===== CARTES ===== */
 .card-container {
     display: flex;
     justify-content: center;
@@ -149,7 +141,6 @@ body {
     margin: 20px 0;
 }
 
-/* ===== BOUTONS ===== */
 .btn {
     display: inline-block;
     background-color: var(--primary);
@@ -185,7 +176,6 @@ body {
     margin: 30px 0;
 }
 
-/* ===== TABLEAUX ===== */
 .table-container {
     background-color: var(--white);
     border-radius: 8px;
@@ -214,11 +204,8 @@ table td {
     border-bottom: 1px solid #eee;
 }
 
-table tr:hover {
-    background-color: #f9f9f9;
-}
 
-/* Badges */
+
 .badge {
     padding: 4px 10px;
     border-radius: 20px;
@@ -236,7 +223,6 @@ table tr:hover {
     color: white;
 }
 
-/* ===== FORMULAIRES ===== */
 .form-container {
     background-color: var(--white);
     border-radius: 8px;
@@ -285,7 +271,6 @@ table tr:hover {
     margin-top: 25px;
 }
 
-/* ===== MESSAGES ===== */
 .message {
     padding: 15px;
     border-radius: 5px;
@@ -305,7 +290,6 @@ table tr:hover {
     border: 1px solid #e74c3c;
 }
 
-/* ===== LOGIN ===== */
 .login-container {
     max-width: 400px;
     margin: 100px auto;
@@ -321,7 +305,6 @@ table tr:hover {
     margin-bottom: 30px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     body {
         padding-top: 120px;

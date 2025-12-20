@@ -15,12 +15,10 @@ if(isset($_POST['submit'])){
     $amount = $_POST['amount'];
     $transaction_type = $_POST['transaction_type'];
     
-    // Insérer la transaction
     $sql = "INSERT INTO transactions (account_id, amount, transaction_type) 
             VALUES ('$account_id', '$amount', '$transaction_type')";
     
     if(mysqli_query($conn, $sql)){
-        // Mettre à jour le solde du compte
         if($transaction_type == 'credit'){
             $update_sql = "UPDATE comptes SET balance = balance + $amount WHERE account_id = $account_id";
         } else {
@@ -43,7 +41,6 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">

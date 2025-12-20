@@ -19,7 +19,6 @@ $result = mysqli_query($conn, "SELECT transactions.*, comptes.account_number
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">

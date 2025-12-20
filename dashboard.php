@@ -7,7 +7,6 @@ if(!isset($_SESSION['user_id'])){
     exit;
 }
 
-// Statistiques
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM clients"))['total'];
 $accounts = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM comptes"))['total'];
 $transactions = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM transactions"))['total'];
@@ -23,7 +22,6 @@ $total_balance = $balance_row['total'] ? number_format($balance_row['total'], 2)
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
